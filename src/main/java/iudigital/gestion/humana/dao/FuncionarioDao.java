@@ -100,7 +100,7 @@ public class FuncionarioDao {
             preparedStatement.setString(6, funcionario.getGenero());
             preparedStatement.setString(7, funcionario.getDireccion());
             preparedStatement.setString(8, funcionario.getTelefono());
-            preparedStatement.setDate(9, java.sql.Date.valueOf(funcionario.getFechaNacimiento()));
+            preparedStatement.setString(9, funcionario.getFechaNacimiento());
             preparedStatement.executeUpdate();
         } finally {
 
@@ -174,7 +174,7 @@ public class FuncionarioDao {
             preparedStatement.setString(6, funcionario.getGenero());
             preparedStatement.setString(7, funcionario.getDireccion());
             preparedStatement.setString(8, funcionario.getTelefono());
-            preparedStatement.setDate(9, java.sql.Date.valueOf(funcionario.getFechaNacimiento()));
+            preparedStatement.setString(9, funcionario.getFechaNacimiento());
             preparedStatement.executeUpdate();
         } finally {
 
